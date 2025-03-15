@@ -9,7 +9,7 @@ A class is a blueprint or template. It defines the attributes (fields) and behav
 
 ### Defining a Class in C#
 
-To define a class in C#, you use the `class` keyword followed by the name of the class. 
+To define a class in C#, we use the `class` keyword followed by the name of the class. 
 
 Here's a simple example:
 
