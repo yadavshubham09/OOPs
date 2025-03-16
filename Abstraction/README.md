@@ -56,7 +56,7 @@ public class Car : Vehicle {
 }
 
 public class Program {
-    static void Main() {
+    public static void Main() {
         Vehicle myCar = new Car("Toyota");
         myCar.DisplayBrand();
         myCar.Start();
@@ -106,7 +106,7 @@ public class Cat : IAnimal {
 }
 
 public class Program {
-    static void Main() {
+    public static void Main() {
         IAnimal myDog = new Dog();
         myDog.MakeSound();
         
@@ -151,7 +151,7 @@ Abstraction is widely used in real-world applications, such as payment processin
 using System;
 
 // Abstract class for Payment
-abstract class Payment {
+public abstract class Payment {
     protected double Amount;
     
     public Payment(double amount) {
@@ -162,7 +162,7 @@ abstract class Payment {
 }
 
 // Implementing payment methods
-class CreditCardPayment : Payment {
+public class CreditCardPayment : Payment {
     public CreditCardPayment(double amount) : base(amount) {}
     
     public override void Pay() {
@@ -170,7 +170,7 @@ class CreditCardPayment : Payment {
     }
 }
 
-class PayPalPayment : Payment {
+public class PayPalPayment : Payment {
     public PayPalPayment(double amount) : base(amount) {}
     
     public override void Pay() {
@@ -178,8 +178,8 @@ class PayPalPayment : Payment {
     }
 }
 
-class Program {
-    static void Main() {
+public class Program {
+    public static void Main() {
         Payment payment;
         
         payment = new CreditCardPayment(150.75);
