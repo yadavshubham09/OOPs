@@ -32,7 +32,7 @@ An **abstract class** in C# is a class that **cannot be instantiated**. It is us
 using System;
 
 // Abstract class
-abstract class Vehicle {
+public abstract class Vehicle {
     protected string Brand;
     
     public Vehicle(string brand) {
@@ -47,7 +47,7 @@ abstract class Vehicle {
 }
 
 // Subclass implementing the abstract method
-class Car : Vehicle {
+public class Car : Vehicle {
     public Car(string brand) : base(brand) {}
     
     public override void Start() {
@@ -55,7 +55,7 @@ class Car : Vehicle {
     }
 }
 
-class Program {
+public class Program {
     static void Main() {
         Vehicle myCar = new Car("Toyota");
         myCar.DisplayBrand();
@@ -87,25 +87,25 @@ An **interface** in C# is a contract that defines methods a class must implement
 using System;
 
 // Defining an interface
-interface IAnimal {
+public interface IAnimal {
     void MakeSound(); // Abstract method
 }
 
 // Implementing the interface in Dog class
-class Dog : IAnimal {
+public class Dog : IAnimal {
     public void MakeSound() {
         Console.WriteLine("Dog barks");
     }
 }
 
 // Implementing the interface in Cat class
-class Cat : IAnimal {
+public class Cat : IAnimal {
     public void MakeSound() {
         Console.WriteLine("Cat meows");
     }
 }
 
-class Program {
+public class Program {
     static void Main() {
         IAnimal myDog = new Dog();
         myDog.MakeSound();
