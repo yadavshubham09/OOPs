@@ -44,7 +44,7 @@ public class Car {
 
 ## What is an Object?
 
-An object is an instance of a class. When we create an object, we are bringing the blueprint of the class into reality. It consists of state and behavior defined by the class, with each object holding its own copy of the data.
+An object is an instance of a class. When we create an object, we are bringing the blueprint of the class into reality. Object consists of state and behavior defined by the class, with each object holding its own copy of the data.
 
 ### Creating Objects in C#
 
